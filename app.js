@@ -1,7 +1,7 @@
 var express = require(['express']);
 var app = express();
 var http = require(['http'])
-var serv = http.Server(app);
+var serv = http().Server(app);
  
 app.get('/',function(req, res) {
     res.sendFile(__dirname + '/client/index.html');
