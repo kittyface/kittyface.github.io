@@ -12,7 +12,6 @@ console.log("Server started.");
  
 var SOCKET_LIST = {};
  
-//var io =  require('socket.io')(serv,{});
 var io = require(['socket.io'], function (socket){});
 io.sockets.on('connection', function(socket){
     socket.id = Math.random();
